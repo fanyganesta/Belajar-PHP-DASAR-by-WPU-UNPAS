@@ -1,0 +1,19 @@
+Project Pembelajaran PHP dasar 
+Fitur yang ada
+1. Penggunaan PHP dengan HTML dengan gaya penulisan templating (bagian HTML dipisahkan dari PHP)
+2. Penggunaan looping untuk menampilkan data mahasiswa dan penggunaan if untuk menampilkan data jika terdapat data 
+3. Penggunaan fungsi, baik fungsi built-in PHP ataupun dibuat manual agar kode program lebih modular dan lebih rapih untuk menghindari duplikasi
+4. Pembuatan array, pengaksesan array, dan macam macam array
+5. Penggunaan Array Asosiatif
+6. Penggunaan Variabel Super Global GET dan POST untuk pengiriman data 
+7. Pembuatan database menggunakan MYSQL
+8. Menghubungkan database MYSQL dengan PHP menggunakan MYSQLi 
+9. Insert data ke database dan Menghapus data pada database
+10. Melakukan Update data pada database 
+11. Menambahkan fitur Pencarian data pada database
+12. Melakukan Upload File ke database
+13. Menambah Form Registrasi dan database baru untuk users
+14. Menambah fitur Login menggunakan user dari database
+15. Menambahkan pengaman login pada halaman tertentu agar tidak diakses oleh user non login dengan SESSION 
+16. Menambahkan fitur Auto Login dengan COOKIE untuk user yang mengaktifkan Remember Me
+17. Penambahan Pagination pada data dari database menggunakan LIMIT pada query
