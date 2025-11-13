@@ -1,0 +1,47 @@
+<?php 
+    // Buat halaman loginnya
+    // Tangkap data yang dikirim
+    // Cek apakah username ada di database
+    // Ambil password dari database
+    // Cek apakah password sama antara database dan yang dimasukkan
+    // Login
+
+    require 'function.php';
+    // Cek apakah form dikirim
+    if( isset( $_POST['login'] ) ){
+        if( login($_POST) > 0 ){
+            $name = $_POST['username'];
+            header("Location: index.php?message=Berhasil Login! Selamat datang $name");
+        } else {
+            header("Location: login.php?error=Data yang anda masukkan salah! Coba lagi");
+        }
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Halaman Login </title>
+</head>
+<body>
+    <?php if( isset($_GET['error'] ) ) : ?>
+        <p style="color: red; font-style: italic"><?= $_GET['error']; ?> </p>
+    <?php endif ?>
+    <h3> Halo, Selamat Datang! </h3>
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td> <label for="username"> Username: </label> </td>
+                <td> <input type="text" id="username" name="username" required>
+            </tr>
+            <tr> 
+                <td> <label for="password"> Password: </label> </td>
+                <td> <input type="password" id="password" name="password" required> </td> 
+            </tr>
+            <tr> 
+                <td colspan="2"> <button type="submit" name="login"> Login </button> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
